@@ -80,6 +80,16 @@
                 <h1>Reported posts</h1>
                 <div id="reported-posts-container"></div>
             </div>
+
+            <!-- Questions and Answers -->
+            <section class="questions">
+                <h4>Q1: How does javascript work?</h4>
+                <p><strong>Ans: </strong>Javascript is a single-threaded interpreted language. Normally we run javascript in the browser and they have different javascript engines to run javascript. Chrome, Node uses the V8 engine to run Javascript. Javascript engines take our source code and parse it and create a syntax tree. Then the engine interprets the code line by line. Computers can not understand javascript code. To run Javascript code very quickly V8 engine uses the Just In Time (JIT) compiler (TurboFan) to compile the code to machine code (Bytecode). Then the computer can understand the code and give us the output. We can run javascript outside of the browser by using Node.</p>
+                <h4>Q2: What does javascript event loop do?</h4>
+                <p><strong>Ans: </strong>Normally javascript works in an asynchronous way. It means it executes the code line by line. But there are some asynchronous elements in javascript (like fetch, setTimeOut, etc). While running the code Javascript creates a stack where it stores the synchronous elements and executes line by line. Heap is the memory where javascript stores references. It also creates a queue where it stores the asynchronous events. Asynchronous events are executed after all the synchronous events are executed from the stack. Queue follows the first come first serve rule to execute the asynchronous events. This all process is run into a loop and it is known as Event Loop. </p>
+                <h4>Q3: Defference between local storage and session storage?</h4>
+                <p><strong>Ans: </strong>Local Storage and Session Storage are almost the same. We use it to store data on the browser. But the difference between Local Storage and Session Storage is durability. Session Storage data is temporary. When we close the tab or browser then the data of Session Storage is being removed from there. But the data of Local Storage is permanent. Local Storage can store data even after closing the tab or browser. Even if we open the browser after a long time still the Local Storage can give us the old data.</p>
+            </section>
         </main>
         <footer></footer>
 
